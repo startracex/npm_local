@@ -73,11 +73,9 @@ packages:
   '@*/*':
     # scoped packages
     access: $all
-    # publish: $authenticated
-    publish: $all
-    # unpublish: $authenticated
-    unpublish: $all
-    proxy: npmjs
+    publish: $authenticated
+    unpublish: $authenticated
+    # proxy: npmjs
 
   '**':
     # allow all users (including non-authenticated users) to read and
@@ -89,14 +87,12 @@ packages:
 
     # allow all known users to publish/publish packages
     # (anyone can register by default, remember?)
-    # publish: $authenticated
-    publish: $all
-    # unpublish: $authenticated
-    unpublish: $all
+    publish: $authenticated
+    unpublish: $authenticated
 
 
     # if package is not available locally, proxy requests to 'npmjs' registry
-    proxy: npmjs
+    # proxy: npmjs
 
 # To improve your security configuration and  avoid dependency confusion
 # consider removing the proxy property for private packages
