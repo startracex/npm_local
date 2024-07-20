@@ -1,0 +1,12 @@
+{
+  "name": "npm_local",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "verdaccio -c config.yaml"
+  },
+  "dependencies": {
+    "verdaccio": "^5.31.1"
+  }
+}
